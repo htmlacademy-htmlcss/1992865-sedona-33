@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Выбор гостиницы</title>
+        <link rel="stylesheet" href="styles/styles.css">
     </head>
     <body>
       <header class="page-header">
@@ -39,13 +40,13 @@
               </a>
             </li>
             <li class="list-item">
-              <a class="button" href="#">Хочу сюда!</a>
+              <a class="button button-header" href="#">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
       </header>
       <main class="main-inner">
-        <header class="inner-haeder">
+      <header class="inner-haeder">
           <h1 class="inner-header-title">
             Гостиницы Седоны
           </h1>
@@ -59,7 +60,6 @@
               <a class="breadcrumbs-link">Гостиницы</a>
             </li>
           </ul>
-        </header>
         <section class="catalog-hotel">
           <h2 class="visually-hidden">
             Список гостиниц с фильтрами
@@ -109,20 +109,22 @@
                 </li>
               </ul>            
             </fieldset>
-            <fieldset class="catalog-filter-group-price">
-              <legend class="catalog-filter-title-price">
-                Стоимость,&#8381;:
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">
+                Стоимость, &#8381;:
               </legend>
               <input class="control-input-price" type="text" name="minimum" min="0" value="0" placeholder="от">
               <input class="control-input-price" type="text" name="maximum" max="9000" value="9000" placeholder="до">
             </fieldset>
-            <button class="button-blue" type="submit">
+            <button class="button-blue button-apply" type="submit">
               Применить
             </button>
           </form>
-          <a class="advanteges-description" href="catalog.html">
+          <a class="advanteges-description button-reset-filter" href="catalog.html">
             Сбросить
           </a>
+        </section>
+      </header>
           <span class="black-font">
             Найдено гостинец:38
           </span>
@@ -154,13 +156,13 @@
                   Amara Resort & Spa
                 </h3>
               </a>
-              <span class="Housing type">
+              <span class="Housing-type">
                 Гостиница
               </span>
-              <span class="price">
+              <span class="Housing-type">
                 от 4000 ₽
               </span>
-              <a class="hotel-product-button button" href="#">
+              <a class="button hotel-product-button" href="#">
                 Подробнее
               </a>
               <button class="hotel-card-favorites-list button-blue" type="submit">
@@ -181,10 +183,10 @@
                   Desert Quail Inn
                 </h3>
               </a>
-              <span class="Housing type">
+              <span class="Housing-type">
                 Гостиница
               </span>
-              <span class="price">
+              <span class="Housing-type">
                 от 3000 ₽
               </span>
               <a class="hotel-product-button button" href="#">
@@ -207,17 +209,17 @@
                   Villas at Poco Diablo
                 </h3>
               </a>
-              <span class="Housing type">
+              <span class="Housing-type">
                 Гостиница
               </span>
-              <span class="price">
+              <span class="Housing-type">
                 от 2000 ₽
               </span>
               <a class="hotel-product-button button" href="#">
                 Подробнее
               </a>
-              <button class="hotel-card-favorites-list button-blue" type="submit">
-                В избранное
+              <button class="button-blue hotel-card-favorites-list button-in-favorites" type="submit">
+                В избранном
               </button> 
               <img class="hotel-stars" src="images/catalog-hotel/star.svg" width="18" height="17" alt="звезда">
               <img class="hotel-stars" src="images/catalog-hotel/star.svg" width="18" height="17" alt="звезда">
@@ -232,10 +234,10 @@
                   GreenTree Inn
                 </h3>
               </a>
-              <span class="Housing type">
+              <span class="Housing-type">
                 Гостиница
               </span>
-              <span class="price">
+              <span class="Housing-type">
                 от 3000 ₽
               </span>
               <a class="hotel-product-button button" href="#">
@@ -256,50 +258,49 @@
           </button>
           <ul class="pagination">
             <li class="pagination-item">
-              <a class="pagination-link pagination-current">
+              <a class="pagination-link button-blue pagination-current">
                 1
               </a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">
+              <a class="pagination-link button-blue" href="#">
                 2
               </a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">
+              <a class="pagination-link button-blue" href="#">
                 3
               </a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">
+              <a class="pagination-link button-blue" href="#">
                 4
               </a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">
+              <a class="pagination-link button-blue" href="#">
                 ...
               </a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">
+              <a class="pagination-link button-blue" href="#">
                 10
               </a>
             </li>
           </ul>
-          <label for="hotel-per-page">Гостинец на странице:</label>
-          <select class="select-control" id="hotel-per-page" aria-label="Количество показываемых гостиниц">
+          <label class="hotel-per-page" for="hotel-per-page">Гостиниц на странице:</label>
+          <select class="select-control select-control-show-pages" id="hotel-per-page" aria-label="Количество показываемых гостиниц">
             <option value="four">4</option>
             <option value="eight">8</option>
             <option value="twelve">12</option>
           </select>
-        </section>
-        <h2>
+        <h2 class="mailing-list black-font-subscribe">
           Подпишись на рассылку
         </h2>
-        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <p class="newsletter-slogan black-font-subscribe">Только полезная информация и никакого спама, <br>честное бойскаутское!</p>
         <form class="subscribe" action="https://echo.htmlacademy.ru/" method="post">
-          <input type="email" name="e-mail" value="Ваш e-mail">
-          <button type="submit" class="button-blue">Подписаться</button>
+          <input class="email" type="email" name="e-mail" value="Ваш e-mail">
+          <button type="submit" class="button-blue button-subscribe">Подписаться</button>
         </form>
       </main>
       <footer class="page-footer">
@@ -325,13 +326,10 @@
             </li>
           </ul>
         </section>
-        <a class="contack-phone" href="tel:+78128121212">
-          +7 (812) 812-12-12
-        </a>
+        <p class="contact"> <a class="contack-phone" href="tel:+78128121212">+7 (812) 812-12-12</a> </p>
         <a href="https://htmlacademy.ru/">
           <img class="footer-logo-htmlacademy" src="images/footer/htmlacademy.svg" width="115" height="34" alt="Логотип HTML-Академии">
         </a>
-      </section>
     </footer>
   </body>
 </html>
