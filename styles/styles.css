@@ -2,7 +2,7 @@
     font-family:"PT Sans";
     font-style:normal;
     font-weight: 400;
-    src: url("fonts/pt-sans-regular.woff2") format("woff2");
+    src: url("/fonts/ptsans-400.woff2") format("woff2");
     font-display: swap;
 }
 
@@ -10,7 +10,7 @@
     font-family:"PT Sans";
     font-style:normal;
     font-weight: 700;
-    src: url("fonts/pt-sans-bold.woff2") format("woff2");
+    src: url("/fonts/ptsans-700.woff2") format("woff2");
     font-display: swap;
 }
 
@@ -134,11 +134,11 @@ body {
     width: 197px;
 }
 
-.benefits-description-foot{
+.benefits-description-foot {
     width: 241px;
 }
 
-.benefits-description-souvenirs{
+.benefits-description-souvenirs {
     width: 250px;
     text-align: center;
 }
@@ -199,7 +199,7 @@ body {
     margin-right: auto;
 }
 
-.button-hotel-search{
+.button-hotel-search {
     font-size: 20px;
     line-height: 36px;
     padding: 19px 150px;
@@ -213,7 +213,7 @@ body {
     background-repeat: no-repeat;
 }
 
-.mailing-list{
+.mailing-list {
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
@@ -341,7 +341,7 @@ body {
     height: 48px;
 }
 
-.button-reset-filter{
+.button-reset-filter {
     color: #ffffff;
 }
 
