@@ -14,16 +14,50 @@
     font-display: swap;
 }
 
+html {
+    height: 100%;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
     font-family: "PT-Sans", sans-serif;
     font-size: 22px;
     line-height: 21px;
     background-color: white;
 }
 
+.main-container {
+    flex-grow: 1;
+}
+
 .page-header {
     color: #000000;
     background-color: #ffffff;
+}
+
+.navigation {
+    display: flex;
+    width: 1060px;
+    margin: 0 auto;
+}
+
+.list-logo{
+    margin-right: 30px;
+}
+
+.navigation-list {
+    margin: 0;
+    margin-left: 17px;
+    padding: 0;
+    width: 450px;
+
+}
+
+.navigation-users {
+    width: 250px;
+    margin-left: auto;
 }
 
 .navigation-link {
@@ -60,10 +94,10 @@ body {
 }
 
 .welcome-description-sedona {
-    background-image: url("../images/fon-nature/index-background-up.jpg");
+    margin: 0 auto;
+    width: 1200px;
+    background-image:url("../images/fon-nature/index-background-up.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
-    text-align: center;
 }
 
 .main-index {
@@ -72,8 +106,8 @@ body {
 }
 
 .welcome {
-    margin-top: 51px;
-    margin-bottom: 82px;
+    margin: auto;
+    padding: 51px 371px 82px;
 }
 
 .main-font {
@@ -83,15 +117,40 @@ body {
     vertical-align: top;
     text-align: center;
     text-transform: uppercase;
+    margin: 0;
 }
 
 .font-advanteges {
-    height: 36px;
+    width: 720px;
     font-weight: 400;
     font-size: 22px;
     line-height: 36px;
     text-align: center;
     text-transform: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+}
+
+.advanteges {
+    width: 1200px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.advanteges-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    align-content: flex-start;
+}
+
+.benefits-list {
+    margin: 0;
+    display: flex;
+    padding-left: 0;
 }
 
 .advanteges-block {
@@ -109,17 +168,24 @@ body {
     width: 209px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 0;
+}
+
+.advanteges-item {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .advanteges-benefits-block-with-photo-font{
     font-weight: 700;
     font-size: 24px;
-    width: 198px;
+    width: 400px;
     line-height: 28px;
     text-transform: uppercase;
     padding-top: 98px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 0;
 }
 
 .advanteges-description {
@@ -139,12 +205,18 @@ body {
     width: 241px;
 }
 
+.advanteges-photo {
+    display: block;
+}
+
 .benefits-description-souvenirs {
     width: 250px;
     text-align: center;
 }
 
 .photo-block {
+    display: flex;
+    width: 1200px;
     color: #ffffff;
     background-color: #83b3d3;
 }
@@ -159,28 +231,22 @@ body {
 .food {
     background-image: url("../images/burger.svg");
     background-repeat: no-repeat;
-    background-position: center;
     background-position: 163px 91px;
 }
 
 .souvenirs {
     background-image: url("../images/surprise.svg");
     background-repeat: no-repeat;
-    background-position: center;
     background-position: 168px 85px;
     background-color: rgba(131, 179, 211, 0.12);
 }
 
-.block-3 {
+.block-3, .block-5 {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
 .block-4 {
   background-color: rgba(131, 179, 211, 0.20);
-}
-
-.block-5 {
-  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .benefits-title {
@@ -214,10 +280,9 @@ body {
 }
 
 .fon-mailing {
+    width: 1200px;
+    margin: 0 auto;
     background-image: url("../images/fon-nature/index-background-down.jpg");
-    background-size: cover;
-    height: 411px;
-    background-repeat: no-repeat;
 }
 
 .mailing-list {
@@ -239,6 +304,24 @@ body {
 
 .subscribe {
     text-align: center;
+    padding-bottom: 94px;
+}
+
+.page-footer {
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-social-list {
+    display: flex;
+    margin: auto;
+    margin-left: 72px;
+    margin-right: 61px;
+    padding: 0;
+    width: 107px;
+    justify-content: space-between;
 }
 
 .email {
@@ -261,6 +344,10 @@ body {
 }
 
 .contack-phone {
+    padding: 0;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    width: 720px;
     font-size: 40px;
     line-height: 40px;
     text-align: center;
@@ -268,10 +355,22 @@ body {
     text-decoration: none;
 }
 
+.footer-logo-htmlacademy {
+    display: block;
+    width: 115px;
+    margin-left: auto;
+    margin-right: 72px;
+}
+
+.main-inner {
+    margin: 0 auto;
+}
+
 .inner-haeder {
     background-color: #83b3d3;
+    margin: 0 auto;
     background-image: url("../images/fon-nature/catalog-background.jpg");
-    width: auto;
+    width: 1200px;
     background-repeat: no-repeat;
     background-size: cover;
     color:#ffffff;
@@ -285,6 +384,7 @@ body {
     text-align: left;
     padding-left: 71px;
     padding-top: 35px;
+    margin-top: 0;
     margin-bottom: 0;
 }
 
@@ -294,6 +394,8 @@ body {
 }
 
 .breadcrumbs {
+    display: flex;
+    flex-direction: row;
     margin-top: 0;
     padding-top: 5px;
     padding-left: 73px;
@@ -304,12 +406,26 @@ body {
     line-height: 21px;
 }
 
+.breadcrumbs-index {
+    margin-right: 26px;
+}
+
+.catalog-filter {
+    display: flex;
+}
+
 .catalog-filter-title {
+    text-align: left;
     font-size: 20px;
     line-height: 26px;
     font-weight: 700;
     padding-left: 71px;
     padding-top: 45px;
+    margin-bottom: 30px;
+}
+
+.catalog-filter-price {
+    margin-left: 216px;
 }
 
 .control-input {
@@ -318,6 +434,8 @@ body {
 }
 
 .catalog-filter-list {
+    width: 166px;
+    margin-top: 0;
     padding-top: 5px;
     padding-left: 67px
 }
@@ -347,8 +465,14 @@ body {
     color: #ffffff;
 }
 
+.catalog-right-column {
+    margin: 71px 50px;
+    width: 1057px;
+}
+
 .select-control {
     font-size: 18px;
+    margin-left: 191px;
     border-color: #e5e5e5;
     border-radius: 4px;
     width: 287px;
@@ -402,7 +526,12 @@ body {
     background-color: #7db54f;
 }
 
+.pagination{
+    width: 1056px;
+}
+
 .pagination-show-more {
+    margin-left: 290px;
     width: 620px;
     height: 60px;
     font-size: 20px;
