@@ -44,7 +44,7 @@ body {
 }
 
 .list-logo{
-  position: relative;
+    position: relative;
     margin-right: 30px;
     height: 70px;
 }
@@ -59,7 +59,7 @@ body {
 }
 
 .list-item {
-  align-self: center;
+    align-self: center;
 }
 
 .navigation-users {
@@ -349,11 +349,11 @@ body {
 
 .block-3,
 .block-5 {
-  background-color: rgba(131, 179, 211, 0.12);
+    background-color: rgba(131, 179, 211, 0.12);
 }
 
 .block-4 {
-  background-color: rgba(131, 179, 211, 0.20);
+    background-color: rgba(131, 179, 211, 0.20);
 }
 
 .block-3,
@@ -491,8 +491,8 @@ body {
 }
 
 .footer-social-link:active .footer-social-icon {
-  fill: #68a2ca;
-  opacity: 0.3;
+    fill: #68a2ca;
+    opacity: 0.3;
 }
 
 .footer-social-list-link:nth-child(3n) {
@@ -1013,13 +1013,13 @@ body {
 }
 
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
