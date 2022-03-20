@@ -44,6 +44,7 @@ body {
 }
 
 .list-logo{
+    position: relative;
     margin-right: 30px;
     height: 70px;
 }
@@ -57,13 +58,17 @@ body {
     list-style-type: none;
 }
 
+.list-item {
+    align-self: center;
+}
+
 .navigation-users {
-    width: 265px;
     justify-content: flex-end;
     margin-left: auto;
 }
 
 .navigation-link {
+    position: relative;
     display:block;
     font-size: 20px;
     line-height: 26px;
@@ -75,8 +80,51 @@ body {
     padding: 20px 17px;
 }
 
+.navigation-link:hover {
+    color: #756257;
+}
+
+.navigation-link:focus {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.navigation-link:active {
+    color: rgba(117, 98, 87, 0.3);
+}
+
+.navigation-link:hover .navigation-icon {
+    fill: #756257;
+}
+
+.navigation-link:active .navigation-icon {
+    fill: #756257;
+    opacity: 0.3;
+}
+
+.navigation-link-current::before {
+    position: absolute;
+    content: "";
+    background-color: #756257;
+    height: 2px;
+    bottom: 2px;
+    left: 17px;
+    right: 17px;
+}
+
 .navigation-users .navigation-link {
     min-width: 15px;
+}
+
+.navigation-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
 }
 
 .button {
@@ -89,6 +137,7 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     border: none;
+    cursor: pointer;
 }
 
 .button-header {
@@ -99,6 +148,19 @@ body {
     margin-bottom: 19px;
     margin-right: 0;
     padding: 9px 15px 8px 15px;
+}
+
+.button-header:hover {
+    background-color: #615048;
+}
+
+.button-header:focus {
+    box-shadow: inset 0 0 0 3px #83b3d3;
+    outline: none;
+}
+
+.button-header:active {
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .welcome-description-sedona {
@@ -112,6 +174,7 @@ body {
 .main-index {
     color: #000000;
     background-color: #ffffff;
+    margin-top: -5px;
 }
 
 .welcome {
@@ -286,11 +349,11 @@ body {
 
 .block-3,
 .block-5 {
-  background-color: rgba(131, 179, 211, 0.12);
+    background-color: rgba(131, 179, 211, 0.12);
 }
 
 .block-4 {
-  background-color: rgba(131, 179, 211, 0.20);
+    background-color: rgba(131, 179, 211, 0.20);
 }
 
 .block-3,
@@ -326,13 +389,26 @@ body {
     display: block;
     width: 575px;
     font-size: 20px;
-    line-height: 36px;
+    line-height: 30px;
     padding: 15px 0;
     border-radius: 10px;
     margin-top: 0;
     margin-bottom: 93px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.button-hotel-search:hover {
+    background-color: #615048;
+}
+
+.button-hotel-search:focus {
+    box-shadow: inset 0 0 0 3px #83b3d3;
+    outline: none;
+}
+
+.button-hotel-search:active {
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .fon-mailing {
@@ -385,13 +461,38 @@ body {
 .footer-social-list {
     display: flex;
     flex-wrap: wrap;
+    width: 128px;
     margin: 0;
+    margin-top: 7px;
     padding: 0;
     list-style-type: none;
 }
 
 .footer-social-list-link {
-    margin-right: 30px;
+    margin-right: 4px;
+}
+
+.footer-social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+.footer-social-link:hover .footer-social-icon {
+    fill: #68a2ca;
+}
+
+.footer-social-link:focus {
+    box-shadow: inset 0 0 0 3px #83b3d3;
+    outline: none;
+}
+
+.footer-social-link:active .footer-social-icon {
+    fill: #68a2ca;
+    opacity: 0.3;
 }
 
 .footer-social-list-link:nth-child(3n) {
@@ -403,7 +504,7 @@ body {
 }
 
 .email {
-    width: 596px;
+    width: 560px;
     height: 60px;
     line-height: 26px;
     border-radius: 10px;
@@ -412,6 +513,23 @@ body {
     border: none;
     background-color: #f2f2f2;
     padding: 0;
+    padding-left: 22px;
+    padding-right: 18px;
+}
+
+.email:hover {
+    background-color: #e6e6e6;
+}
+
+.email:focus {
+    box-shadow: inset 0 0 0 3px #83b3d3;
+    border: 0;
+    outline: none;
+}
+
+.email:invalid {
+    box-shadow: inset 0 0 0 2px #ff5757;
+    background-color: #FFFFFF;
 }
 
 .button-subscribe {
@@ -427,27 +545,76 @@ body {
     padding: 0;
 }
 
+.button-subscribe:hover {
+    background-color: #68a2ca;
+}
+
+.button-subscribe:focus {
+    box-shadow: inset 0 0 0 3px #756257;
+    outline: none;
+}
+
+.button-subscribe:active {
+    color: rgba(255, 255, 255, 0.3);
+}
+
 .contack-phone {
     padding: 0;
     margin-top: 40px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     width: 720px;
     font-size: 40px;
     line-height: 40px;
     text-align: center;
     color: #000000;
     text-decoration: none;
+    border-radius: 10px;
+}
+
+.contack-phone:hover {
+    color: #756257;
+}
+
+.contack-phone:focus {
+    width: 361px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 15px;
+    box-shadow: inset 0 0 0 3px #83b3d3;
+    outline: none;
+}
+
+.contack-phone:active {
+    color: #756257;
+    opacity: 0.3;
 }
 
 .footer-logo-htmlacademy {
     display: block;
     width: 115px;
     margin-left: auto;
-    margin-right: 72px;
+    margin-right: 50px;
+    border-radius: 10px;
+    padding: 18px 22px;
+}
+
+.footer-logo-htmlacademy:hover .htmlacademy-icon {
+    fill: #756257;
+}
+
+.footer-logo-htmlacademy:focus{
+    box-shadow: inset 0 0 0 3px #83b3d3;
+    outline-style: none;
+}
+
+.footer-logo-htmlacademy:active {
+    fill: #756257;
+    opacity: 0.3;
 }
 
 .main-inner {
     margin: 0 auto;
+    margin-top: -5px;
     margin-bottom: 141px;
 }
 
@@ -523,7 +690,7 @@ body {
     margin-left: 119px;
 }
 
-.control-input {
+.control {
     font-size: 18px;
     line-height: 23px;
 }
@@ -534,7 +701,6 @@ body {
     margin-bottom: 83px;
     padding: 0;
     list-style-type: none;
-
 }
 
 .price-button {
@@ -565,24 +731,42 @@ body {
 }
 
 .control-input-price {
+    line-height: 23px;
     padding: 0;
+    padding-left: 19px;
+    padding-top: 14px;
+    padding-bottom: 11px;
     border: 2px solid #ffffff;
     border-radius: 4px;
     background-color: transparent;
     color: #ffffff;
     font-size: 18px;
-    width: 142px;
-    height: 48px;
+    width: 123px;
 }
 
 .control-input-price:nth-child(1) {
-  border-bottom-right-radius: 0;
-  border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border-right: 0;
+}
+
+.control-input-price::after {
+    content: "от";
+    color:#ffffff;
+    font-size: 18px;
 }
 
 .control-input-price:nth-child(2) {
+    width: 122px;
+    padding-left: 17px;
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
+}
+
+.control-input-price:nth-child(2)::after {
+    content: "до";
+    color:#ffffff;
+    font-size: 18px;
 }
 
 .button-reset-filter {
@@ -619,12 +803,17 @@ body {
     width: 287px;
     height: 48px;
     padding: 12px 0px 13px 19px;
+    background-color: #ffffff;
 }
 
 .buttom-sorting {
+    display:flex;
+    justify-content: center;
+    align-items: center;
     width: 46px;
     height: 46px;
     margin: 0;
+    padding: 0;
     margin-right: 8px;
     background-color: #ffffff;
     border-width: 2px;
@@ -824,13 +1013,13 @@ body {
 }
 
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
