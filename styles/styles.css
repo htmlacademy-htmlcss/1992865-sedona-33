@@ -999,10 +999,15 @@ body {
     opacity: 0.6;
 }
 
-.hotel-card-image:focus {
+.hotel-card-link:focus {
+    outline: none;
+}
+
+.hotel-card-link:focus
+.hotel-card-image {
     display: block;
     box-shadow: 0 0 0 3px #83b3d3;
-    outline: none;
+    outline-style: none;
     margin-bottom: 19px;
 }
 
@@ -1065,6 +1070,7 @@ body {
 .hotel-product-button:focus {
     background-color: #615048;
     box-shadow: inset 0 0 0 3px #83b3d3;
+    outline: none;
 }
 
 .hotel-product-button:active {
@@ -1087,6 +1093,7 @@ body {
 
 .button-hotel-card-favorites-list:focus {
     box-shadow: inset 0 0 0 3px #756257;
+    outline: none;
 }
 
 .button-hotel-card-favorites-list:active {
@@ -1096,12 +1103,16 @@ body {
 
 .button-in-favorites:hover {
     background-color: #6c9e42;
-    box-shadow: none;
+}
+
+.button-in-favorites:focus {
+    background-color: #6c9e42;
+    box-shadow: inset 0 0 0 3px #756257;
+    outline: none;
 }
 
 .button-in-favorites:active {
     background-color: #6c9e42;
-    box-shadow: none;
     color: rgba(255, 255, 255, 0.3);
 }
 
