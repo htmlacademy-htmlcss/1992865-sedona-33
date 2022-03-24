@@ -1575,17 +1575,24 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     background-color: #7db54f;
 }
 
+.pagination-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    padding-top: 30px;
+    margin: 0;
+    margin-bottom: 73px;
+    border-top: 1px solid #e6e6e6;
+}
+
 .pagination {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin: 0;
-    margin-bottom: 73px;
     padding: 0;
-    padding-top: 30px;
-    width: 1056px;
     list-style-type: none;
-    border-top: 1px solid #e6e6e6;
 }
 
 .pagination-show-more {
