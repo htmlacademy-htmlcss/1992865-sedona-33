@@ -543,6 +543,11 @@ body {
     background-color: #FFFFFF;
 }
 
+.email:required:invalid {
+    background-color: #f2f2f2;
+    box-shadow: none;
+}
+
 .button-subscribe {
     font-size: 20px;
     line-height: 26px;
@@ -1322,6 +1327,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .sorting-container {
     display: flex;
+    justify-content: space-between;
     margin: 0;
     margin-bottom: 53px;
     padding: 0;
@@ -1330,8 +1336,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .sorting-container .main-font {
     margin: 0;
     margin-top: 6px;
-    margin-bottom: 6px;
-    margin-right: 155px;
+    margin-bottom: 3px;
+    margin-right: 203px;
     padding: 0;
     line-height: 39px;
 }
@@ -1368,15 +1374,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     display:flex;
     justify-content: center;
     align-items: center;
-    width: 46px;
-    height: 46px;
+    width: 44px;
+    height: 44px;
     margin: 0;
     padding: 0;
     margin-right: 8px;
     background-color: #ffffff;
-    border-width: 2px;
-    border-style: solid;
-    border-color: #e6e6e6;
+    border: 2px solid #e6e6e6;
     border-radius: 4px;
 }
 .buttom-sorting:nth-child(5) {
@@ -1574,6 +1578,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .pagination {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin: 0;
     margin-bottom: 73px;
     padding: 0;
