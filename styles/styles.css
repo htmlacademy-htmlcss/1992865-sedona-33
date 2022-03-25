@@ -89,13 +89,12 @@ body {
     color: rgba(117, 98, 87, 0.3);
 }
 
-.navigation-link:hover .navigation-icon {
-    fill: #756257;
+.navigation-link:active .navigation-icon {
+    fill: rgba(117, 98, 87, 0.3);
 }
 
-.navigation-link:active .navigation-icon {
+.navigation-link:hover .navigation-icon {
     fill: #756257;
-    opacity: 0.3;
 }
 
 .favorite::after {
@@ -367,7 +366,7 @@ body {
 }
 
 .block-3,
-.block-4
+.block-4,
 .block-5 {
     padding-bottom: 77px;
 }
@@ -539,13 +538,12 @@ body {
 }
 
 .email:invalid {
-    box-shadow: inset 0 0 0 2px #ff5757;
-    background-color: #FFFFFF;
+  box-shadow: none;
 }
 
-.email:required:invalid {
-    background-color: #f2f2f2;
-    box-shadow: none;
+.email:focus:invalid {
+    box-shadow: inset 0 0 0 2px #ff5757;
+    background-color: #FFFFFF;
 }
 
 .button-subscribe {
@@ -808,7 +806,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     padding-top: 15px;
     box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
-    display: block;
     width: 256px;
     position: absolute;
     left: 50%;
@@ -1006,7 +1003,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     width: 5px;
     position: absolute;
     right: -8px;
-    top: 0px;
+    top: 0;
     bottom: 0;
     background-image: url("../images/arrow-to-right.svg");
     background-repeat: no-repeat;
@@ -1170,14 +1167,14 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     width: 123px;
 }
 
-.control-input-price:nth-child(1) {
+.minimum-price {
     border-right: 1px solid rgba(255, 255, 255);
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
     margin-right: 0px;
 }
 
-.control-input-price:nth-child(2) {
+.maximum-price {
     width: 122px;
     padding-left: 17px;
     border-left: 1px solid rgba(255, 255, 255);
@@ -1185,13 +1182,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     border-top-left-radius: 0;
 }
 
-.control-input-price:nth-child(1):hover {
+.minimum-price:hover {
     border: 2px solid rgba(255, 255, 255, 0.6);
     border-right: 1px solid rgba(255, 255, 255, 0.6);
     outline: none;
 }
 
-.control-input-price:nth-child(2):hover {
+.maximum-price:hover {
     border: 2px solid rgba(255, 255, 255, 0.6);
     border-left: 1px solid rgba(255, 255, 255, 0.6);
     outline: none;
@@ -1437,8 +1434,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     outline: none;
 }
 
-.hotel-card-link:focus
-.hotel-card-image {
+.hotel-card-link:focus .hotel-card-image {
     display: block;
     box-shadow: 0 0 0 3px #83b3d3;
     outline-style: none;
